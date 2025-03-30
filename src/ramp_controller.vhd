@@ -5,13 +5,13 @@
 --
 -- Description :
 --   Fait varier de manière progressive (ramp-up/ramp-down) la valeur d'un
---   duty_cycle courant vers une consigne target_duty_cycle. À chaque expiration
+--   duty_cycle courant vers une consigne target_duty_cycle. A chaque expiration
 --   de RAMP_INC_PERIOD cycles d'horloge, on incrémente ou décrémente de 1.
 --
 -- Paramètres génériques :
 --   - MAX_CPT         : Valeur maximale pour le duty_cycle
---   - RAMP_INC_PERIOD : Intervalle (en nombre de cycles d’horloge)
---                       entre deux pas de montée/descente.
+--   - RAMP_INC_PERIOD : Intervalle (en nombre de cycles dhorloge)
+--                       entre deux pas de montee/descente.
 --
 -- Ports :
 --   - clk               : Horloge principale
