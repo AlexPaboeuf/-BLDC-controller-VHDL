@@ -6,6 +6,4 @@ Ce projet implémente un contrôleur BLDC (Brushless DC) sur FPGA comprenant :
 - Un module de ramp-up/down pour l’accélération
 - Des scripts de synthèse et de simulation
 
-## Ouvrir le projet dans Vivado
-
-1. Cloner le dépôt:
+## Voir le rapport dans Documents
