@@ -1,0 +1,19 @@
+v 4
+file . "bldc_top_tb.vhd" "3290b0f84ea8ae98f6d62718b5449c030fe90cdc" "20250410120757.950":
+  entity bldc_top_tb at 23( 764) + 0 on 21;
+  architecture tb of bldc_top_tb at 30( 874) + 0 on 22;
+file . "sequencer.vhd" "8c33ac651d2c3d494356da898897b7f95bddfdba" "20250410120655.477":
+  entity sequencer at 16( 626) + 0 on 17;
+  architecture behavioral of sequencer at 36( 1104) + 0 on 18;
+file . "pwm_generator.vhd" "293ae1bd5ec14c19eb10c280e692e3c423c3c346" "20250410120655.453":
+  entity pwm_generator at 22( 968) + 0 on 13;
+  architecture behavioral of pwm_generator at 38( 1286) + 0 on 14;
+file . "sin_approx.vhd" "b2d4f9f9d44bc603854281fc67c801b15749f84b" "20250410120645.592":
+  entity sin_approx at 18( 663) + 0 on 11;
+  architecture behavioral of sin_approx at 29( 867) + 0 on 12;
+file . "ramp_controller.vhd" "a40cd93aab12224859a6be6dd14227a7e6af822f" "20250410120655.465":
+  entity ramp_controller at 23( 1006) + 0 on 15;
+  architecture behavioral of ramp_controller at 40( 1419) + 0 on 16;
+file . "bldc_top.vhd" "22ff8d44997c98f19169672d78e55db50f499817" "20250410120749.728":
+  entity bldc_top at 21( 926) + 0 on 19;
+  architecture structural of bldc_top at 45( 1532) + 0 on 20;

@@ -1,0 +1,4 @@
+v 4
+file . "bldc_top_tb.vhd" "3290b0f84ea8ae98f6d62718b5449c030fe90cdc" "20250330213709.096":
+  entity bldc_top_tb at 23( 764) + 0 on 11;
+  architecture tb of bldc_top_tb at 30( 874) + 0 on 12;

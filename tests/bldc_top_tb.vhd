@@ -3,10 +3,11 @@
 -- Auteurs       : PESCAY Maxime, PABOEUF Alexandre
 -- Date         : 28/03/2025
 -- Test bench pour valider :
---   1) ramp_controller.vhd
---   2) pwm_generator.vhd
---   3) sequencer.vhd
---   4) bldc_top.vhd
+--   1) sin_approx.vhd
+--   2) ramp_controller.vhd
+--   3) pwm_generator.vhd
+--   4) sequencer.vhd
+--   5) bldc_top.vhd
 --
 -- Hypothèses / Paramètres :
 --   - Horloge à 1 MHz (période = 1 us)

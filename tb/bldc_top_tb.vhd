@@ -3,10 +3,11 @@
 -- Auteurs       : PESCAY Maxime, PABOEUF Alexandre
 -- Date         : 28/03/2025
 -- Test bench pour valider :
---   1) ramp_controller.vhd
---   2) pwm_generator.vhd
---   3) sequencer.vhd
---   4) bldc_top.vhd
+--   1) sin_approx.vhd
+--   2) ramp_controller.vhd
+--   3) pwm_generator.vhd
+--   4) sequencer.vhd
+--   5) bldc_top.vhd
 --
 -- Hypothèses / Paramètres :
 --   - Horloge à 1 MHz (période = 1 us)
@@ -94,7 +95,7 @@ begin
     );
 
   ----------------------------------------------------------------------------
-  -- GÉNÉRATION DE L'HORLOGE (période 1 µs => 1 MHz)
+  -- GENERATION DE L'HORLOGE (période 1 µs => 1 MHz)
   ----------------------------------------------------------------------------
   process
   begin
@@ -107,17 +108,17 @@ begin
   end process;
 
   ----------------------------------------------------------------------------
-  -- SCÉNARIO DE TEST
+  -- SCENARIO DE TEST
   ----------------------------------------------------------------------------
   process
   begin
-    -- Étape 0 : Reset actif (bas) pendant quelques microsecondes
+    -- Etape 0 : Reset actif (bas) pendant quelques microsecondes
     reset_n <= '0';
     hall_code <= "000";       -- Au reset, code "000" (état invalide)
     target_duty_in <= 0;      -- Duty cycle à 0
     wait for 10 us;           -- On maintient reset bas 10 µs
 
-    -- Étape 1 : On relâche le reset, le système commence à fonctionner
+    -- Etape 1 : On relâche le reset, le système commence à fonctionner
     reset_n <= '1';
     wait for 20 us;           -- Laisse le temps d'initialisation
 
